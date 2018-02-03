@@ -1,0 +1,86 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="w3-image w3-center w3-opacity-max">
+<img src="{{url_for('static', filename='welcome.jpg')}}"/>
+</div>
+
+<div class="w3-container w3-margin-top">
+
+  <div class="w3-card-2 w3-circle w3-third w3-center w3-pale-red">
+    <img src="{{url_for('static', filename='emblem.png')}}">
+    <h1>Furniture Design</h1>
+    <h3>
+      Create A New Piece
+    </h3>
+
+  </div>
+
+  <div class="w3-card-2 w3-circle w3-third w3-center w3-pale-red">
+    <img src="{{url_for('static', filename='emblem.png')}}">
+    <h1>Re-Purposing</h1>
+    <h3>
+      Repurpose An Old Piece
+    </h3>
+
+  </div>
+
+  <div class="w3-card-2 w3-circle w3-third w3-center w3-pale-red">
+    <img src="{{url_for('static', filename='emblem.png')}}">
+    <h1>Repair</h1>
+    <h3>
+      Repair and Reupholster
+    </h3>
+
+  </div>
+
+
+
+</div>
+
+<div class="w3-container">
+
+  <div id="design" class="w3-card-4 w3-center w3-margin-top w3-dark-grey w3-padding">
+    <img src="{{url_for('static', filename='emblem.png')}}">
+    <h2>Design</h2>
+    <hr>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+    officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+
+  <div id="repurpose" class="w3-card-4 w3-center w3-margin-top w3-pink w3-padding">
+    <img src="{{url_for('static', filename='emblem2.png')}}">
+    <h1>Repurpose</h1>
+    <hr>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+    officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+
+  <div id="repair" class="w3-card-4 w3-center w3-margin-top w3-dark-gray w3-padding">
+    <img src="{{url_for('static', filename='emblem.png')}}">
+    <h1>Repair</h1>
+    <hr>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+    officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+
+</div>
+
+{% endblock %}

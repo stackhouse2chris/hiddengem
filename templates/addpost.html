@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form name="addForm" id="addForm" class="w3-container" action="{{url_for('post')}}" method="post">
+  <label class="w3-text-pink" for="title" style="margin-top: 10px; font-size: 20px;">Title:</label>
+  <input id="title" class="w3-input w3-hover-gray" type="text" name="title" value="" style="width: 33%; margin-top: 10px;" placeholder="Enter Title">
+  <label class="w3-text-pink" for="subtitle" style="margin-top: 10px; font-size: 20px;">Subtitle:</label>
+  <input id="subtitle" class="w3-input w3-hover-gray" type="text" name="subtitle" value="" style="width: 33%; margin-top: 10px;" placeholder="Enter Subtitle">
+  <label class="w3-text-pink" for="author" style="margin-top: 10px; font-size: 20px;">Author:</label>
+  <input id="author" class="w3-input w3-hover-gray" type="text" name="author" value="" style="width: 33%; margin-top: 10px;" placeholder="Author">
+  <label class="w3-text-pink" for="content" style="margin-top: 10px; font-size: 20px;">Post:</label>
+  <textarea id="blogpost" class="w3-input" name="blogpost" rows="20" style="margin-top: 10px; width: 50%;" placeholder="Enter Blog Post Here" onkeyup="countText()"></textarea>
+  <button id="submit" class="w3-button w3-dark-gray">Submit</button>
+  <label class="w3-text-pink"> Remaining Text:</label><p style="display: inline;" id="remainingtext"></p>
+</form>
+{% endblock %}

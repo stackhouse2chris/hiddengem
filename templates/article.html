@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="w3-row">
+  <div class="w3-panel w3-half w3-bottombar">
+    <h1 class="w3-text-dark-gray">{{blogpost.title}}</h1>
+    <h2 class="w3-text-pink">By: {{blogpost.author}}</h2>
+  </div>
+</div>
+
+<div class="w3-row"></div>
+  <div class="w3-panel w3-half w3-borderbottom">
+    <span><img src="{{url_for('static', filename='calendar.png')}}" /></span>
+    {{blogpost.date.strftime("%b %d, %Y")}}
+    <h2>{{blogpost.subtitle}}</h2>
+  </div>
+</div>
+<div class="w3-row">
+    <div id="blogcontent" class="w3-panel w3-twothird w3-border">
+        <p>{{blogpost.content}}</p>
+    </div>
+ </div>
+
+
+{% endblock %}

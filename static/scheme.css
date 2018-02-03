@@ -1,0 +1,44 @@
+
+body {
+  padding: none;
+  margin: none;
+}
+
+#header {
+  height: 75px;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+#header-2{
+
+  height: 225px;
+}
+
+#diy, #social{
+  padding-right: 25px;
+}
+
+#social a{
+  padding-left: 10px;
+}
+
+#nav a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#design, #repurpose, #repair{
+  height: 400px;
+  margin: 5px;
+}
+
+.blogheader{
+  text-decoration: none;
+  font-size: 50px;
+
+}
+
+#blogcontent{
+  min-height: 300px;
+}
