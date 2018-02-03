@@ -5,18 +5,32 @@
 </div>
 
 <div class="w3-container">
-  <div class="w3-container w3-text-dark-gray">
+  <div class="w3-container w3-text-dark-gray w3-bottombar">
     <h1>Contact Me!</h1>
     <p>I would love to hear from you!</p>
     <p>If you have any questions about pricing, would like an estimate, or just want to say hello, please complete the form below.</p>
   </div>
-  <hr class="w3-dark-gray">
-  <div class="w3-container">
-    <form class="w3-form" action="index.html" method="post">
-      <input class="w3-input w3-row w3-quarter" type="text" name="firstname" value="" placeholder="First Name">
-      <input class="w3-input w3-row w3-quarter" type="text" name="lastname" value="" placeholder="Last Name">
-      <input class="w3-input w3-row w3-quarter" type="email" name="email" value="" placeholder="Email Address">
+  <hr>
+  <div class="w3-container w3-half">
+    <form name="contact" class="w3-container" action="index.html" method="post">
+      <input class="w3-input" type="text" name="firstname" value="" placeholder="First Name" style="width: 50%; margin-top: 10px;">
+      <input class="w3-input" type="text" name="lastname" value="" placeholder="Last Name" style="width: 50%; margin-top: 10px;">
+      <input class="w3-input" type="email" name="email" value="" placeholder="Email Address" style="width: 75%; margin-top: 10px;">
+      <textarea class="w3-input" name="comment" rows="20" cols="80" placeholder="How Can I Help You?" style="width: 80%; margin-top: 10px;"></textarea>
+      <input type="submit" value="Submit" class="w3-button w3-dark-gray" style="margin-top: 10px;">
     </form>
+  </div>
+  <div class="w3-card w3-quarter w3-dark-gray">
+    <h2 class="w3-bottombar">Need Some Inspiration?</h2>
+    <p>Please Visit My Social Media Pages</p>
+    <a class="w3-bar-item w3-hover-opacity" href="https://www.facebook.com/diyherway"><img class="w3-image" src="{{url_for('static', filename='facebook.png')}}"/></a>
+    <a class="w3-bar-item w3-hover-opacity" href="https://www.instagram.com/emeraldcities25/"><img class="w3-image" src="{{url_for('static', filename='instagram.png')}}"/></a>
+    <ul>
+      <li>Up To Date Sales Items</li>
+      <li>New Projects Added Daily</li>
+      <li>See What Others Are Saying</li>
+      <li>Help Me Spread The Word!</li>
+    </ul>
   </div>
 
 </div>
