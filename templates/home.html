@@ -1,14 +1,14 @@
 {% extends 'layout.html' %}
 {% block body %}
 <div class="w3-image w3-center w3-opacity-max">
-<img src="{{url_for('static', filename='welcome.jpg')}}"/>
+<img class="banner" src="{{url_for('static', filename='welcome.jpg')}}"/>
 </div>
 
-<div class="w3-container w3-margin-top">
+<div class="w3-container w3-margin-top" id="circles">
 
   <div class="w3-card-2 w3-circle w3-third w3-center w3-pale-red">
     <img src="{{url_for('static', filename='emblem.png')}}">
-    <h1>Furniture Design</h1>
+    <h1>Design</h1>
     <h3>
       Create A New Piece
     </h3>
@@ -17,7 +17,7 @@
 
   <div class="w3-card-2 w3-circle w3-third w3-center w3-pale-red">
     <img src="{{url_for('static', filename='emblem.png')}}">
-    <h1>Re-Purposing</h1>
+    <h1>Re-Purpose</h1>
     <h3>
       Repurpose An Old Piece
     </h3>

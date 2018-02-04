@@ -42,3 +42,79 @@ body {
 #blogcontent{
   min-height: 300px;
 }
+
+@media only screen and (min-width: 1500px) {
+  .banner {
+    width: 100%
+  }
+  #nav {
+    display: inline-flex;
+  }
+  #socialsmall{
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 1500px) {
+  .banner {
+    width: 100%
+  }
+  #nav {
+    display: inline-flex;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  #design, #repurpose, #repair{
+    height: auto;
+  }
+  #socialsmall{
+    display: none;
+  }
+  #social{
+    display: inline-block;
+  }
+
+}
+@media only screen and (max-width: 1000px) {
+  #circles h3{
+    display: none;
+  }
+  #design, #repurpose, #repair{
+    height: auto;
+  }
+}
+@media only screen and (max-width: 999px) {
+
+  #social{
+    display: none;
+  }
+
+  #socialsmall{
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (max-width: 760px) {
+  #nav{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  #altnav{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #nav{
+    display: none;
+  }
+  #altnav{
+    display: inline;
+    width: 100%;
+  }
+}
