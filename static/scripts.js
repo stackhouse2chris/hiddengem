@@ -9,11 +9,9 @@ var page = split[3];
     var add = document.getElementById('home').classList.add('w3-text-black');
   }
   else{
-    var pagename = document.getElementById(page).classList;
-    if ('w3-text-pink' in pagename){
     var remove = document.getElementById(page).classList.remove('w3-text-pink');
     var add = document.getElementById(page).classList.add('w3-text-black');
-  }}
+  }
 
 };
 
