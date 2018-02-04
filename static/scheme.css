@@ -43,6 +43,29 @@ body {
   min-height: 300px;
 }
 
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 160px;
+}
+
+.dropdown-content a{
+  list-style: none;
+  text-decoration: none;
+  background-color: white;
+  display: block;
+}
+
+.show{
+  display: block;
+}
+
 @media only screen and (min-width: 1500px) {
   .banner {
     width: 100%

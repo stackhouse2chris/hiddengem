@@ -22,4 +22,14 @@ var textlength = text.length;
 var remaining = 10000-textlength;
 document.getElementById('remainingtext').innerHTML = remaining;
 
-}
+};
+
+document.getElementById("altnav").addEventListener("mouseover", dropdown);
+
+document.getElementById("dropdown-content").addEventListener("mouseout", dropdown);
+
+document.getElementById("altnav").addEventListener("mouseout", dropdown);
+
+function dropdown(){
+  document.getElementById("dropdown-content").classList.toggle("show");
+ }
