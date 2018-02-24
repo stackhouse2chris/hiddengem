@@ -39,6 +39,10 @@ body {
 
 }
 
+.blogpost{
+  text-decoration: none;
+}
+
 #blogcontent{
   min-height: 300px;
 }
